@@ -192,6 +192,7 @@ h1 {
     }
     .apresentacao__conteudo{
         width: auto;
+        font-size: auto;
     }
     .imagem{
         width: 30%;

@@ -192,11 +192,15 @@ h1 {
     }
     .apresentacao__conteudo{
         width: auto;
-        font-size: auto;
     }
     .imagem{
         width: 30%;
     }
+    .decoracao__botoes{
+    border-radius: auto;
+    font-size:auto;
+
+}
   
 }
 

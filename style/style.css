@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&display=swap');
+
+:root{
+    --cor-primaria: #000;
+    --cor-secundaria : #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover-botao: #272727;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --tamanho-da-fonte: 1.5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    /*height: 100vh;*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 5% 0% 0% 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 65px;
+}
+
+.cabecalho__links {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+    padding : 10 px;
+}
+
+h1 {
+    font-weight: normal; 
+}
+
+.apresentacao {
+    display:flex;
+    align-items:center;
+    margin: 8% 15%;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    height: 50%;
+    display : flex; 
+    flex-direction: column;
+    gap: 40px;
+}
+.texto__principal{
+    font-size: 1.63rem;
+    font-family: var(--fonte-primaria);
+    border-width: 16px;
+}
+
+.primeiro__paragrafo{
+    font-size: 1.13rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.imagem {
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 40%;
+    display: flex;
+}
+
+.apresentacao_links { 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ gap: 32px;
+}
+
+.apresentacao__titulo__links { 
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+.decoracao__botoes {
+    /*background-color: #22D4FD;*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border : 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center ;
+    border-radius: 8px;
+    font-size: var(--tamanho-da-fonte);
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.decoracao__botoes:hover{
+    background-color: var(--cor-hover-botao);
+    padding: 4%;   
+}
+
+.rodape__da__pag{
+    color: var(--cor-primaria);
+    background-color:var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* SOBRE MIM*/
+
+/*.sobremim{
+    display:flex;
+    align-items:center;
+    margin: 8% 10%;
+    padding: 5% 5% 5% 5%;
+    justify-content: space-between;
+}*/
+
+.imagem__patricia{
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 40%;
+    display: flex;
+}
+
+
+
+/*curriculo*/
+
+.apresentacao__conteudo__curriculo{
+    display:flex;
+    align-items:center;
+    margin: 7% 15%;
+    padding: 0% 0% 10% 0%;
+    justify-content: space-between;
+}
+
+.apresentacao__curriculo{
+    width: 593px;
+    height: 357px;
+    display : flex; 
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.imagem__curriculo {
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 1050px ){
+    .cabecalho{
+        padding: 6%;
+        margin: 6%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+        text-align: center;
+    }
+    .imagem{
+        width: 30%;
+    }
+    .decoracao__botoes{
+        width: auto;
+        
+    }
+
+    .rodape__da__pag{
+        width: auto;
+    }
+  
+}
+
+@media(max-width:580px){
+    .cabecalho{
+        padding: 1%;
+    }
+    .cabecalho__menu{
+        width: auto;
+        justify-content: space-around;
+        align-content: center;
+    }
+}
+
+/* O hover é usado para selecionar elementos quando você passa o mouse sobre eles. 
+:root {   --main-bg-color: brown;} varivel do css
+basico
+No Css se voce fizer algo errado dentro dos conxetes{} o restante ficara errado. 
+nao podemos se esquecer do ; isso e essencial;
+{} nunca vazios;
+sempre dois underline;
+quando alterado o weight - largura o height altura muda automaticamente.pois se ajusta a largura do texto
+@media(){ .facet_siderbar{ display:none;}} formula do media queries
+padding --> 1- topo ; 2 lados --- quando adicionado apenas um valor esse valor e aplicado a todos os lados;
+auto no width: aplicando 100% na largura da página responsiva, ela vai ter o mesmo resultado que o width: auto; 
+e vai acompanhar o tamanho da tela de forma automática.
+
+*/
+
+
+/*duvidas
+quando faco a alteracao do tamanho da pag e adiciono 50 porcentos, da onde eu tiro esse valor? 
+resposta: A unidade de medida porcentagem(%) faz com que a imagem ou qualquer elemento 
+ocupe metade de qualquer tela quando aplicamos 50% em sua largura.
+
+---duvida, mas quando eu alterei isso no meu projeto o projeto em si mudou
+
+rem-- a medida altera de acordo com a pag, show. mas, para o que a viewport serve entao? pois foi passado q a viewport
+era examente para isso. ajustar o tamanho da pag de acordo com o dispositivo*/

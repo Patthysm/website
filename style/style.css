@@ -220,29 +220,3 @@ h1 {
         align-content: center;
     }
 }
-
-/* O hover é usado para selecionar elementos quando você passa o mouse sobre eles. 
-:root {   --main-bg-color: brown;} varivel do css
-basico
-No Css se voce fizer algo errado dentro dos conxetes{} o restante ficara errado. 
-nao podemos se esquecer do ; isso e essencial;
-{} nunca vazios;
-sempre dois underline;
-quando alterado o weight - largura o height altura muda automaticamente.pois se ajusta a largura do texto
-@media(){ .facet_siderbar{ display:none;}} formula do media queries
-padding --> 1- topo ; 2 lados --- quando adicionado apenas um valor esse valor e aplicado a todos os lados;
-auto no width: aplicando 100% na largura da página responsiva, ela vai ter o mesmo resultado que o width: auto; 
-e vai acompanhar o tamanho da tela de forma automática.
-
-*/
-
-
-/*duvidas
-quando faco a alteracao do tamanho da pag e adiciono 50 porcentos, da onde eu tiro esse valor? 
-resposta: A unidade de medida porcentagem(%) faz com que a imagem ou qualquer elemento 
-ocupe metade de qualquer tela quando aplicamos 50% em sua largura.
-
----duvida, mas quando eu alterei isso no meu projeto o projeto em si mudou
-
-rem-- a medida altera de acordo com a pag, show. mas, para o que a viewport serve entao? pois foi passado q a viewport
-era examente para isso. ajustar o tamanho da pag de acordo com o dispositivo*/
